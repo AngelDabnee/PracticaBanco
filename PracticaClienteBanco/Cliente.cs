@@ -14,7 +14,6 @@ namespace PracticaClienteBanco
         private string cuenta;
         private DateTime fechaNacimiento;
         private BancoEnum banco;
-        private int edad;
         //Haremos accesorios publicos para acceder a esas propiedades
         public string Nombre 
         {
@@ -30,8 +29,14 @@ namespace PracticaClienteBanco
         { get => fechaNacimiento; set => fechaNacimiento = value; }
         public BancoEnum Banco 
         { get => banco; set => banco = value; }
-        public int Edad { get => edad; set => edad = value; }
-
+        public int CalcularEdad //Modificamos el acceso del cliente, para que pueda ser "visto" por nuestra instancia y poder utilizarlo, al igual que los demás metodos
+        {
+            get { return this.calcularEdad(); }
+        }
+        public string RFC //Realizamos el encapsulamiento del metodo para hacerlo publico y podrlo utilizar. 
+        {
+            get { return this.calcularRFCTexto(); }
+        }
         //Constructor defaul (es cuando no tenemos parametros)que le añadiremos
         /// <summary>
         /// Crea un nuevo cliente
@@ -48,14 +53,39 @@ namespace PracticaClienteBanco
             this.fechaNacimiento = fechaNacimiento;
             this.banco = banco;
         }
-        private int calcularEdad(DateTime fecha2) 
+        //Se crea la sobrecarga del método ToString, para realizar la impresión del sujeto al capturar sus datos.
+        public override string ToString()
         {
-            DateTime res = DateTime.Now;
-            if (this.fechaNacimiento.)
+            return "Cliente " + this.nombre + " " + this.apellido + " usa el banco " + this.banco + " su fecha de nacimiento es: " + this.fechaNacimiento;
+        }
+        //Realizamos el método privado para calcular la edad, tomando encuenta el orden AAAA-mm-dd
+        private int calcularEdad() 
+        {
+            int edad = DateTime.Now.Year - fechaNacimiento.Year;
+            if (DateTime.Now.Year > fechaNacimiento.Year)
             {
+                if (DateTime.Now.Month >= fechaNacimiento.Month)
+                {
+                    if (DateTime.Now.Day > fechaNacimiento.Day)
+                    {
+
+                    }
+                    else if (DateTime.Now.Day == fechaNacimiento.Day)
+                    {
+                    }
+                    else if (DateTime.Now.Day < fechaNacimiento.Day) 
+                    {
+                    }
+                }
 
             }
-            return res;
+            return edad-1;
+        }
+        private string calcularRFCTexto() 
+        {
+            int idxEspacioBlanco = this.apellido.IndexOf(" ");//con esto, sacamos el espacio en blanco de la separación de apellidos
+            //Realizamos el método el acomodo, según el orden de char que necesitamos para el rfc. 
+            return this.apellido[0].ToString() + this.apellido[1].ToString() + this.apellido[idxEspacioBlanco + 1].ToString() + this.nombre[0] + "";
         }
 
     }

@@ -1,0 +1,15 @@
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\bin\Debug\net7.0\PracticaClienteBanco.exe
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\bin\Debug\net7.0\PracticaClienteBanco.deps.json
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\bin\Debug\net7.0\PracticaClienteBanco.runtimeconfig.json
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\bin\Debug\net7.0\PracticaClienteBanco.dll
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\bin\Debug\net7.0\PracticaClienteBanco.pdb
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\PracticaClienteBanco.csproj.AssemblyReference.cache
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\PracticaClienteBanco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\PracticaClienteBanco.AssemblyInfoInputs.cache
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\PracticaClienteBanco.AssemblyInfo.cs
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\PracticaClienteBanco.csproj.CoreCompileInputs.cache
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\PracticaClienteBanco.dll
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\refint\PracticaClienteBanco.dll
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\PracticaClienteBanco.pdb
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\PracticaClienteBanco.genruntimeconfig.cache
+C:\Users\master\source\repos\PracticaClienteBanco\PracticaClienteBanco\obj\Debug\net7.0\ref\PracticaClienteBanco.dll

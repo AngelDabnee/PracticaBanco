@@ -24,12 +24,14 @@ namespace PracticaClienteBanco
         public string Apellido 
         { get => apellido; set => apellido = value; }
         public string Cuenta 
-        { get => cuenta; set => cuenta = value; }
+        { get => cuenta; 
+            set => cuenta = value; 
+        }
         public DateTime FechaNacimiento 
         { get => fechaNacimiento; set => fechaNacimiento = value; }
         public BancoEnum Banco 
         { get => banco; set => banco = value; }
-        public int CalcularEdad //Modificamos el acceso del cliente, para que pueda ser "visto" por nuestra instancia y poder utilizarlo, al igual que los demás metodos
+        public int Edad //Modificamos el acceso del cliente, para que pueda ser "visto" por nuestra instancia y poder utilizarlo, al igual que los demás metodos
         {
             get { return this.calcularEdad(); }
         }
@@ -46,12 +48,13 @@ namespace PracticaClienteBanco
         /// <param name="cuenta">capturar el numero de cuenta del cliente</param>
         /// <param name="fechaNacimiento">capturar la fecha de nacimiento del cliente en formato AAAA-mm-dd</param>
         /// <param name="banco">de la selección de bancos de BancEnum</param>
-        public Cliente(string nombre, string apellido, DateTime fechaNacimiento, BancoEnum banco) 
+        public Cliente(string nombre, string apellido, DateTime fechaNacimiento, BancoEnum banco, string cuenta) 
         {
             this.nombre = nombre;//Cuando agregamos this.nombre (en este caso), es que le agregamos el valor de los métdos al objeto
             this.apellido = apellido;
             this.fechaNacimiento = fechaNacimiento;
             this.banco = banco;
+            this.cuenta = cuenta;
         }
         //Se crea la sobrecarga del método ToString, para realizar la impresión del sujeto al capturar sus datos.
         public override string ToString()
@@ -87,6 +90,5 @@ namespace PracticaClienteBanco
             //Realizamos el método el acomodo, según el orden de char que necesitamos para el rfc. 
             return this.apellido[0].ToString() + this.apellido[1].ToString() + this.apellido[idxEspacioBlanco + 1].ToString() + this.nombre[0] + "";
         }
-
     }
 }
